@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "ossem-rust";
+    src: url(Ossem-Rust.otf) format("woff"),
+        url("https://dafonttop.com/wp-data/o/152/8152/file/Ossem-Rust.otf") format("opentype"),
+        url("https://dafonttop.com/wp-data/o/152/8152/file/Ossem-Rust.otf") format("truetype");
+}
+
+$mapa: (back-color: #ffefe1,
+);
+
+$back-color: map-get($mapa, back-color);
+
+@import "header";
+@import "section";
+@import "footer";
+@import "mediaqueries";
+
+
+$color-principal: #fe9f00;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $back-color;
+    font-family: sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+body::-webkit-scrollbar{
+    background-color: $back-color;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: $color-principal;
+    border-radius: 15px;
+}
+
+.container-fluid {
+    padding: 0;
+}

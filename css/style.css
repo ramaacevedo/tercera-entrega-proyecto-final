@@ -1,0 +1,2522 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "ossem-rust";
+  src: url(Ossem-Rust.otf) format("woff"), url("https://dafonttop.com/wp-data/o/152/8152/file/Ossem-Rust.otf") format("opentype"), url("https://dafonttop.com/wp-data/o/152/8152/file/Ossem-Rust.otf") format("truetype");
+}
+/* COMIENZA MENU DE NAVEGACION */
+.navbar {
+  background-color: #fe9f00;
+}
+
+/* COMIENZO LOGO */
+#navbar-brand {
+  font-size: 80px;
+  color: #fff;
+  padding: 0;
+  margin-left: 50px;
+  font-family: "ossem-rust";
+}
+
+/* FIN LOGO */
+nav ul {
+  margin: 0;
+  padding: 0;
+  background-color: #fe9f00;
+}
+nav ul li#li {
+  margin-right: 30px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+nav ul li#li a {
+  transition: all 0.5s;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  border-radius: 10px;
+  color: #818181 !important;
+  transform: scale(1.05);
+}
+
+/* COMIENZO SUBMENÚ DENTRO DEL BOTÓN "Productos" */
+.submenu {
+  position: absolute;
+  z-index: 1000;
+  background-color: #fea100ce;
+  border-radius: 10px;
+  padding: 0;
+  display: none;
+}
+.submenu li {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.submenu li a.submenu1 {
+  padding: 19px;
+  margin: 0;
+}
+
+.menuPrincipal li:hover .submenu {
+  display: block;
+}
+
+/* FIN SUBMENÚ DENTRO DEL BOTÓN "Productos" */
+/* FIN MENÚ DE NAVEGACION */
+/* COMIENZO CUERPO DE LA PÁGINA */
+/* CAROUSEL */
+.carousel-item {
+  margin-bottom: 50px;
+}
+
+/* FIN CAROUSEL */
+h1#titulo-comida {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+div.productos {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 35px;
+  margin-bottom: 50px;
+  align-items: center;
+  grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
+}
+
+section article.donas, section article.tacos, section article.tarta, section article.medialuna, section article.pizza, section article.pastafrola, section article.pan, section article.muffin, section article.hambur {
+  background-color: #fea1006c;
+  border-radius: 10px;
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  gap: 10px;
+}
+section article.donas p.donas--parraf, section article.tacos p.donas--parraf, section article.tarta p.donas--parraf, section article.medialuna p.donas--parraf, section article.pizza p.donas--parraf, section article.pastafrola p.donas--parraf, section article.pan p.donas--parraf, section article.muffin p.donas--parraf, section article.hambur p.donas--parraf {
+  font-size: 13px;
+  grid-row: 2/3;
+  padding: 10px;
+}
+
+article.donas:hover, section article.tacos:hover, section article.tarta:hover, section article.medialuna:hover, section article.pizza:hover, section article.pastafrola:hover, section article.pan:hover, section article.muffin:hover, section article.hambur:hover {
+  box-shadow: 0 0 17px #fff;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.donas--img, .tacos--img, .tarta--img, .medialuna--img, .pizza--img, .pastafrola--img, .pan--img, .muffin--img, .hambur--img {
+  background-image: url(../img/Productos/donas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: all 0.7s;
+  grid-row: 1/2;
+  height: 20em;
+}
+
+span.donas--span, span.tacos--span, span.tarta--span, span.medialuna--span, span.pizza--span, span.pastafrola--span, span.pan--span, span.muffin--span, span.hambur--span {
+  color: #444444;
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+  padding-bottom: 18px;
+}
+
+section article.hambur {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+section article.hambur p.hambur--parraf {
+  font-size: 13px;
+  grid-row: 2/3;
+  padding: 10px;
+}
+
+.hambur--img {
+  background-image: url(../img/Productos/hamburguesa.jpg);
+}
+
+section article.muffin {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+section article.muffin p.muffin--parraf {
+  font-size: 13px;
+  grid-row: 2/3;
+  padding: 10px;
+}
+
+.muffin--img {
+  background-image: url(../img/Productos/muffin.jpg);
+}
+
+section article.pan {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+section article.pan p.pan--parraf {
+  font-size: 13px;
+  grid-row: 2/3;
+  padding: 10px;
+}
+
+.pan--img {
+  background-image: url(../img/Productos/pan.jpg);
+}
+
+section article.pastafrola {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+section article.pastafrola p.pastafrola--parraf {
+  font-size: 13px;
+  grid-row: 2/3;
+  padding: 10px;
+}
+
+.pastafrola--img {
+  background-image: url(../img/Productos/pastafrola.jpg);
+}
+
+section article.pizza {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+section article.pizza p.pizza--parraf {
+  font-size: 13px;
+  grid-row: 2/3;
+  padding: 10px;
+}
+
+.pizza--img {
+  background-image: url(../img/Productos/pizza.jpg);
+}
+
+section article.medialuna {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+section article.medialuna p.medialuna--parraf {
+  font-size: 13px;
+  grid-row: 2/3;
+  padding: 10px;
+}
+
+.medialuna--img {
+  background-image: url(../img/Productos/media-luna.jpg);
+}
+
+section article.tarta {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+section article.tarta p.tarta--parraf {
+  font-size: 13px;
+  grid-row: 2/3;
+  padding: 10px;
+}
+
+.tarta--img {
+  background-image: url(../img/Productos/tarta.jpg);
+}
+
+section article.tacos {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+section article.tacos p.tacos--parraf {
+  font-size: 13px;
+  grid-row: 2/3;
+  padding: 10px;
+}
+
+.tacos--img {
+  background-image: url(../img/Productos/tacos.jpg);
+}
+
+/* MISIÓN Y VISIÓN */
+.myv-div {
+  width: 95%;
+  background-color: #fe9f00;
+  text-align: center;
+  margin: auto;
+  margin-top: 150px;
+  box-shadow: 0 0 20px 20px gray;
+  padding: 0;
+}
+.myv-div i {
+  font-size: 35px;
+  color: #444444;
+  margin: 35px 0;
+}
+.myv-div h3 {
+  font-weight: bold;
+  color: #444444;
+  margin: 25px 0;
+}
+.myv-div p {
+  margin: auto;
+  width: 90%;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* FIN MISIÓN Y VISIÓN */
+/* COMIENZO FORMULARIO */
+.container-form {
+  background-color: #fea1006c;
+  margin: auto;
+  width: 100%;
+  margin-top: 200px;
+  display: grid;
+}
+
+#formulario {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  margin: 50px;
+  align-items: center;
+}
+
+h1.msj {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px black;
+}
+
+input {
+  width: 80%;
+  height: 2em;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  opacity: 60%;
+  background-color: #dadada;
+  box-shadow: 1px 1px 1px black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+textarea {
+  width: 80%;
+  height: 200px;
+  resize: none;
+  border-radius: 10px;
+  background-color: #dadada;
+  border: solid 1.5px;
+  box-shadow: 1px 1px 1px black;
+  opacity: 60%;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+input.boton {
+  width: 80%;
+  height: 40px;
+  opacity: 90%;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.map {
+  margin-top: 25px;
+  margin-right: 55px;
+  padding-top: 50px;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.info-contacto {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px black;
+}
+.info-contacto ul li {
+  list-style: none;
+  margin: 0px;
+  color: #fff;
+  padding: 5px;
+}
+
+/* FIN FORMULARIO */
+div.flecha {
+  padding: 7px;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  margin: auto;
+}
+
+section a img#flecha {
+  height: 200px;
+}
+
+/* FIN CUERPO DE LA PÁGINA */
+/* COMIENZO FOOTER */
+footer {
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30px 250px auto 300px 30px;
+  grid-template-rows: repeat(4, 1fr);
+  background-color: #fe9f00;
+  height: 120px;
+  margin: 0;
+}
+footer p {
+  color: #000000;
+  margin: auto 0;
+  padding: 0;
+  font-weight: bold;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.instagram-img {
+  height: 40px;
+  float: right;
+}
+
+#a-img {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: auto 0;
+}
+
+h5 {
+  font-size: 16px;
+  grid-column: 4/6;
+  grid-row: 3/4;
+  text-align: center;
+  margin: auto;
+}
+
+/* FIN FOOTER */
+/* MEDIA QUERIES */
+@media only screen and (max-width: 320px) {
+  body::-webkit-scrollbar-thumb {
+    background-color: #fe9f00;
+    border-radius: 15px;
+  }
+
+  /* COMIENZO CUERPO DE LA PÁGINA */
+  h2#titulo-comida {
+    text-align: center;
+    font-size: 35px;
+    color: #000;
+    margin: 50px;
+  }
+
+  div.productos {
+    display: grid;
+    gap: 25px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 10vh;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  section article.donas, section article.hambur, section article.muffin, section article.pan, section article.pastafrola, section article.pizza, section article.medialuna, section article.tarta, section article.tacos {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .donas--img, .hambur--img, .muffin--img, .pan--img, .pastafrola--img, .pizza--img, .medialuna--img, .tarta--img, .tacos--img {
+    background-image: url(../img/Productos/donas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.donas p.donas--parraf, section article.hambur p.donas--parraf, section article.muffin p.donas--parraf, section article.pan p.donas--parraf, section article.pastafrola p.donas--parraf, section article.pizza p.donas--parraf, section article.medialuna p.donas--parraf, section article.tarta p.donas--parraf, section article.tacos p.donas--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.donas--span, span.hambur--span, span.muffin--span, span.pan--span, span.pastafrola--span, span.pizza--span, span.medialuna--span, span.tarta--span, span.tacos--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.hambur {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .hambur--img {
+    background-image: url(../img/Productos/hamburguesa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.hambur p.hambur--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.hambur--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.muffin {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .muffin--img {
+    background-image: url(../img/Productos/muffin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.muffin p.muffin--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.muffin--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.pan {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .pan--img {
+    background-image: url(../img/Productos/pan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.pan p.pan--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.pan--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.pastafrola {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .pastafrola--img {
+    background-image: url(../img/Productos/pastafrola.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.pastafrola p.pastafrola--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.pastafrola--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.pizza {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 6/7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .pizza--img {
+    background-image: url(../img/Productos/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.pizza p.pizza--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.pizza--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.medialuna {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 7/8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .medialuna--img {
+    background-image: url(../img/Productos/media-luna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.medialuna p.medialuna--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.medialuna--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.tarta {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 8/9;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .tarta--img {
+    background-image: url(../img/Productos/tarta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.tarta p.tarta--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.tarta--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.tacos {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 9/10;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .tacos--img {
+    background-image: url(../img/Productos/tacos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.tacos p.tacos--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.tacos--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  /* FORMULARIO */
+  .container-form {
+    background-color: #fea1006c;
+    margin: auto;
+    width: 100%;
+    margin-top: 200px;
+    display: grid;
+  }
+
+  #formulario {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 50px;
+    align-items: center;
+  }
+
+  h1.msj {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  input {
+    width: 80%;
+    height: 2em;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    opacity: 60%;
+    background-color: #dadada;
+    box-shadow: 1px 1px 1px black;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  textarea {
+    width: 80%;
+    height: 200px;
+    resize: none;
+    border-radius: 10px;
+    background-color: #dadada;
+    border: solid 1.5px;
+    box-shadow: 1px 1px 1px black;
+    opacity: 60%;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  input.boton {
+    width: 80%;
+    height: 40px;
+    opacity: 90%;
+    cursor: pointer;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .map {
+    margin-top: 25px;
+    margin-right: 55px;
+    padding-top: 50px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+  }
+
+  .info-contacto {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    font-size: 25px;
+  }
+
+  .info-contacto ul li {
+    list-style: none;
+    margin: 0px;
+    color: #fff;
+    padding: 5px;
+  }
+
+  div.flecha {
+    padding: 7px;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin: auto;
+  }
+
+  section a img#flecha {
+    height: 200px;
+  }
+
+  /* FIN FORMULARIO */
+  /* FIN CUERPO DE LA PÁGINA */
+  /* COMIENZO FOOTER */
+  footer {
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: #fe9f00;
+    height: 260px;
+    margin: 0;
+  }
+
+  footer p {
+    color: #000000;
+    margin: auto 0;
+    padding: 0;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    float: left;
+    display: block;
+  }
+
+  .instagram-img {
+    height: 50px;
+  }
+
+  #a-img {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: auto;
+  }
+
+  h5 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    text-align: center;
+    margin: auto;
+    font-size: 10px;
+  }
+
+  /* FIN FOOTER */
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  /* COMIENZO CUERPO DE LA PÁGINA */
+  h2#titulo-comida {
+    text-align: center;
+    font-size: 35px;
+    color: #000;
+    margin: 50px;
+  }
+
+  div.productos {
+    display: grid;
+    gap: 25px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 10vh;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  section article.donas, section article.hambur, section article.muffin, section article.pan, section article.pastafrola, section article.pizza, section article.medialuna, section article.tarta, section article.tacos {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .donas--img, .hambur--img, .muffin--img, .pan--img, .pastafrola--img, .pizza--img, .medialuna--img, .tarta--img, .tacos--img {
+    background-image: url(../img/Productos/donas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.donas p.donas--parraf, section article.hambur p.donas--parraf, section article.muffin p.donas--parraf, section article.pan p.donas--parraf, section article.pastafrola p.donas--parraf, section article.pizza p.donas--parraf, section article.medialuna p.donas--parraf, section article.tarta p.donas--parraf, section article.tacos p.donas--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.donas--span, span.hambur--span, span.muffin--span, span.pan--span, span.pastafrola--span, span.pizza--span, span.medialuna--span, span.tarta--span, span.tacos--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.hambur {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .hambur--img {
+    background-image: url(../img/Productos/hamburguesa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.hambur p.hambur--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.hambur--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.muffin {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .muffin--img {
+    background-image: url(../img/Productos/muffin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.muffin p.muffin--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.muffin--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.pan {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .pan--img {
+    background-image: url(../img/Productos/pan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.pan p.pan--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.pan--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.pastafrola {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .pastafrola--img {
+    background-image: url(../img/Productos/pastafrola.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.pastafrola p.pastafrola--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.pastafrola--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.pizza {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 6/7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .pizza--img {
+    background-image: url(../img/Productos/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.pizza p.pizza--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.pizza--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.medialuna {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 7/8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .medialuna--img {
+    background-image: url(../img/Productos/media-luna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.medialuna p.medialuna--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.medialuna--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.tarta {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 8/9;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .tarta--img {
+    background-image: url(../img/Productos/tarta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.tarta p.tarta--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.tarta--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.tacos {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/1;
+    grid-row: 9/10;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .tacos--img {
+    background-image: url(../img/Productos/tacos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.tacos p.tacos--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.tacos--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  /* FORMULARIO */
+  .container-form {
+    background-color: #fea1006c;
+    margin: auto;
+    width: 100%;
+    margin-top: 200px;
+    display: grid;
+  }
+
+  #formulario {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 50px;
+    align-items: center;
+  }
+
+  h1.msj {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  input {
+    width: 80%;
+    height: 2em;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    opacity: 60%;
+    background-color: #dadada;
+    box-shadow: 1px 1px 1px black;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  textarea {
+    width: 80%;
+    height: 200px;
+    resize: none;
+    border-radius: 10px;
+    background-color: #dadada;
+    border: solid 1.5px;
+    box-shadow: 1px 1px 1px black;
+    opacity: 60%;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  input.boton {
+    width: 80%;
+    height: 40px;
+    opacity: 90%;
+    cursor: pointer;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .map {
+    margin-top: 25px;
+    margin-right: 55px;
+    padding-top: 50px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+  }
+
+  .info-contacto {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    font-size: 25px;
+  }
+
+  .info-contacto ul li {
+    list-style: none;
+    margin: 0px;
+    color: #fff;
+    padding: 5px;
+  }
+
+  div.flecha {
+    padding: 7px;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin: auto;
+  }
+
+  section a img#flecha {
+    height: 200px;
+  }
+
+  /* FIN FORMULARIO */
+  /* FIN CUERPO DE LA PÁGINA */
+  /* COMIENZO FOOTER */
+  footer {
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: #fe9f00;
+    height: 260px;
+    margin: 0;
+  }
+
+  footer p {
+    color: #000000;
+    margin: auto 0;
+    padding: 0;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    float: left;
+    display: block;
+  }
+
+  .instagram-img {
+    height: 50px;
+  }
+
+  #a-img {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: auto;
+  }
+
+  h5 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    text-align: center;
+    margin: auto;
+    font-size: 10px;
+  }
+}
+/* FIN FOOTER */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* COMIENZO CUERPO DE LA PÁGINA */
+  h2#titulo-comida {
+    text-align: center;
+    font-size: 35px;
+    color: #000;
+    margin: 50px;
+  }
+
+  div.productos {
+    display: grid;
+    gap: 25px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 10vh;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  section article.donas, section article.hambur, section article.muffin, section article.pan, section article.pastafrola, section article.pizza, section article.medialuna, section article.tarta, section article.tacos {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .donas--img, .hambur--img, .muffin--img, .pan--img, .pastafrola--img, .pizza--img, .medialuna--img, .tarta--img, .tacos--img {
+    background-image: url(../img/Productos/donas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.donas p.donas--parraf, section article.hambur p.donas--parraf, section article.muffin p.donas--parraf, section article.pan p.donas--parraf, section article.pastafrola p.donas--parraf, section article.pizza p.donas--parraf, section article.medialuna p.donas--parraf, section article.tarta p.donas--parraf, section article.tacos p.donas--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.donas--span, span.hambur--span, span.muffin--span, span.pan--span, span.pastafrola--span, span.pizza--span, span.medialuna--span, span.tarta--span, span.tacos--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.hambur {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .hambur--img {
+    background-image: url(../img/Productos/hamburguesa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.hambur p.hambur--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.hambur--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.muffin {
+    border-radius: 10px;
+    border: black;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .muffin--img {
+    background-image: url(../img/Productos/muffin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.muffin p.muffin--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.muffin--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.pan {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .pan--img {
+    background-image: url(../img/Productos/pan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.pan p.pan--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.pan--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.pastafrola {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .pastafrola--img {
+    background-image: url(../img/Productos/pastafrola.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.pastafrola p.pastafrola--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.pastafrola--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.pizza {
+    border-radius: 10px;
+    border: black;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .pizza--img {
+    background-image: url(../img/Productos/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.pizza p.pizza--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.pizza--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.medialuna {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/3;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .medialuna--img {
+    background-image: url(../img/Productos/media-luna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.medialuna p.medialuna--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.medialuna--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.tarta {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/2;
+    grid-row: 6/7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .tarta--img {
+    background-image: url(../img/Productos/tarta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.tarta p.tarta--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.tarta--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.tacos {
+    border-radius: 10px;
+    border: black;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .tacos--img {
+    background-image: url(../img/Productos/tacos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.tacos p.tacos--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.tacos--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  /* FORMULARIO */
+  /* COMIENZO FORMULARIO */
+  .container-form {
+    background-color: #fea1006c;
+    margin: auto;
+    width: 100%;
+    margin-top: 200px;
+    display: grid;
+  }
+
+  #formulario {
+    /* width: 90%; */
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 50px;
+    align-items: center;
+  }
+
+  h1.msj {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  input {
+    width: 80%;
+    height: 2em;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    opacity: 60%;
+    background-color: #dadada;
+    box-shadow: 1px 1px 1px black;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  textarea {
+    width: 80%;
+    height: 200px;
+    resize: none;
+    border-radius: 10px;
+    background-color: #dadada;
+    border: solid 1.5px;
+    box-shadow: 1px 1px 1px black;
+    opacity: 60%;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  input.boton {
+    width: 80%;
+    height: 40px;
+    opacity: 90%;
+    cursor: pointer;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .map {
+    margin-top: 25px;
+    margin-right: 55px;
+    padding-top: 50px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+  }
+
+  .info-contacto {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    font-size: 25px;
+  }
+
+  .info-contacto ul li {
+    list-style: none;
+    margin: 0px;
+    color: #fff;
+    padding: 5px;
+  }
+
+  /* FIN FORMULARIO */
+  div.flecha {
+    padding: 7px;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin: auto;
+  }
+
+  section a img#flecha {
+    height: 200px;
+  }
+
+  /* FIN FORMULARIO */
+  /* FIN CUERPO DE LA PÁGINA */
+  /* COMIENZO FOOTER */
+  footer {
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: #fe9f00;
+    height: 260px;
+    margin: 0;
+  }
+
+  footer p {
+    color: #000000;
+    margin: auto 0;
+    padding: 0;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    float: left;
+    display: block;
+  }
+
+  .instagram-img {
+    height: 50px;
+  }
+
+  #a-img {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: auto;
+  }
+
+  h5 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    text-align: center;
+    margin: auto;
+    font-size: 10px;
+  }
+
+  /* FIN FOOTER */
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* COMIENZO CUERPO DE LA PÁGINA */
+  h2#titulo-comida {
+    text-align: center;
+    font-size: 35px;
+    color: #000;
+    margin: 50px;
+  }
+
+  div.productos {
+    display: grid;
+    gap: 25px;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 10vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  section article.donas, section article.hambur, section article.muffin, section article.pan, section article.pastafrola, section article.pizza, section article.medialuna, section article.tarta, section article.tacos {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .donas--img, .hambur--img, .muffin--img, .pan--img, .pastafrola--img, .pizza--img, .medialuna--img, .tarta--img, .tacos--img {
+    background-image: url(../img/Productos/donas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.donas p.donas--parraf, section article.hambur p.donas--parraf, section article.muffin p.donas--parraf, section article.pan p.donas--parraf, section article.pastafrola p.donas--parraf, section article.pizza p.donas--parraf, section article.medialuna p.donas--parraf, section article.tarta p.donas--parraf, section article.tacos p.donas--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.donas--span, span.hambur--span, span.muffin--span, span.pan--span, span.pastafrola--span, span.pizza--span, span.medialuna--span, span.tarta--span, span.tacos--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.hambur {
+    border-radius: 10px;
+    border: black;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .hambur--img {
+    background-image: url(../img/Productos/hamburguesa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.hambur p.hambur--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.hambur--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.muffin {
+    border-radius: 10px;
+    border: black;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .muffin--img {
+    background-image: url(../img/Productos/muffin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.muffin p.muffin--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.muffin--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.pan {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .pan--img {
+    background-image: url(../img/Productos/pan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.pan p.pan--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.pan--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.pastafrola {
+    border-radius: 10px;
+    border: black;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .pastafrola--img {
+    background-image: url(../img/Productos/pastafrola.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.pastafrola p.pastafrola--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.pastafrola--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.pizza {
+    border-radius: 10px;
+    border: black;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .pizza--img {
+    background-image: url(../img/Productos/pizza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.pizza p.pizza--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.pizza--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.medialuna {
+    border-radius: 10px;
+    border: black;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .medialuna--img {
+    background-image: url(../img/Productos/media-luna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.medialuna p.medialuna--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.medialuna--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.tarta {
+    border-radius: 10px;
+    border: black;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .tarta--img {
+    background-image: url(../img/Productos/tarta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.tarta p.tarta--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.tarta--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  section article.tacos {
+    border-radius: 10px;
+    border: black;
+    grid-column: 3/4;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 10px;
+  }
+
+  .tacos--img {
+    background-image: url(../img/Productos/tacos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+
+  section article.tacos p.tacos--parraf {
+    font-size: 13px;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    padding: 10px;
+    color: #000;
+  }
+
+  span.tacos--span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+    color: #000;
+  }
+
+  /* FORMULARIO */
+  /* COMIENZO FORMULARIO */
+  .container-form {
+    background-color: #fea1006c;
+    margin: auto;
+    width: 100%;
+    margin-top: 200px;
+    display: grid;
+  }
+
+  #formulario {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 50px;
+    align-items: center;
+  }
+
+  h1.msj {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  input {
+    width: 80%;
+    height: 2em;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    opacity: 60%;
+    background-color: #dadada;
+    box-shadow: 1px 1px 1px black;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  textarea {
+    width: 80%;
+    height: 200px;
+    resize: none;
+    border-radius: 10px;
+    background-color: #dadada;
+    border: solid 1.5px;
+    box-shadow: 1px 1px 1px black;
+    opacity: 60%;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  input.boton {
+    width: 80%;
+    height: 40px;
+    opacity: 90%;
+    cursor: pointer;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  .map {
+    margin-top: 25px;
+    margin-right: 55px;
+    padding-top: 50px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+  }
+
+  .info-contacto {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    font-size: 25px;
+  }
+
+  .info-contacto ul li {
+    list-style: none;
+    margin: 0px;
+    color: #fff;
+    padding: 5px;
+  }
+
+  /* FIN FORMULARIO */
+  div.flecha {
+    padding: 7px;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin: auto;
+  }
+
+  section a img#flecha {
+    height: 200px;
+  }
+
+  /* FIN FORMULARIO */
+  /* FIN CUERPO DE LA PÁGINA */
+  /* COMIENZO FOOTER */
+  footer {
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: #fe9f00;
+    height: 260px;
+    margin: 0;
+  }
+
+  footer p {
+    color: #000000;
+    margin: auto 0;
+    padding: 0;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    float: left;
+    display: block;
+  }
+
+  .instagram-img {
+    height: 50px;
+  }
+
+  #a-img {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: auto;
+  }
+
+  h5 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    text-align: center;
+    margin: auto;
+    font-size: 10px;
+  }
+
+  /* FIN FOOTER */
+}
+/* FIN MEDIA QUERIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffefe1;
+  font-family: sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+  background-color: #ffefe1;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fe9f00;
+  border-radius: 15px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,447 @@
+$color-principal: #fe9f00;
+$sombra-texto: 2px 2px 2px black;
+$sombra-caja: 1px 1px 1px black;
+
+$mapa: (back-col: #fea1006c,
+    black-color: #000,
+    grey-col: rgb(68, 68, 68),
+);
+
+$back-col: map-get($mapa, back-col);
+$black-color: map-get($mapa, bord-color);
+$grey-col: map-get($mapa, grey-col);
+
+
+@mixin parametros ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+/* COMIENZO CUERPO DE LA PÁGINA */
+
+/* CAROUSEL */
+
+.carousel-item {
+    margin-bottom: 50px;
+}
+
+/* FIN CAROUSEL */
+
+h1#titulo-comida {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+div.productos {
+    @include parametros(100%, 100%);
+    display: grid;
+    gap: 35px;
+    margin-bottom: 50px;
+    align-items: center;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
+}
+
+// DONAS
+
+section article.donas {
+    background-color: $back-col;
+    border-radius: 10px;
+    border: $black-color;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    gap: 10px;
+
+    p.donas--parraf {
+        color: $black-color;
+        font-size: 13px;
+        grid-row: 2/3;
+        padding: 10px;
+    }
+
+}
+
+article.donas:hover {
+    box-shadow: 0 0 17px #fff;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.donas--img {
+    background-image: url(../img/Productos/donas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: all 0.7s;
+    grid-row: 1/2;
+    height: 20em;
+}
+
+span.donas--span {
+    color: $grey-col;
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    padding-bottom: 18px;
+}
+
+// FIN DONAS
+
+// HAMBURGUESAS
+
+section article.hambur {
+    @extend .donas;
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+
+    p.hambur--parraf {
+        color: $black-color;
+        font-size: 13px;
+        grid-row: 2/3;
+        padding: 10px;
+    }
+}
+
+.hambur--img {
+    @extend .donas--img;
+    background-image: url(../img/Productos/hamburguesa.jpg);
+}
+
+span.hambur--span {
+    @extend .donas--span;
+}
+
+// FIN HAMBURGUESAS
+
+// MUFFIN
+
+section article.muffin {
+    @extend .donas;
+    grid-column: 4/5;
+    grid-row: 1/2;
+
+
+    p.muffin--parraf {
+        color: $black-color;
+        font-size: 13px;
+        grid-row: 2/3;
+        padding: 10px;
+    }
+}
+
+.muffin--img {
+    @extend .donas--img;
+    background-image: url(../img/Productos/muffin.jpg);
+}
+
+span.muffin--span {
+    @extend .donas--span;
+}
+
+// FIN MUFFIN
+
+// PAN
+
+section article.pan {
+    @extend .donas;
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+
+    p.pan--parraf {
+        color: $black-color;
+        font-size: 13px;
+        grid-row: 2/3;
+        padding: 10px;
+    }
+}
+
+.pan--img {
+    @extend .donas--img;
+    background-image: url(../img/Productos/pan.jpg);
+}
+
+span.pan--span {
+    @extend .donas--span;
+}
+
+// FIN PAN
+
+// PASTAFROLA
+
+section article.pastafrola {
+    @extend .donas;
+    grid-column: 3/4;
+    grid-row: 2/3;
+
+
+    p.pastafrola--parraf {
+        color: $black-color;
+        font-size: 13px;
+        grid-row: 2/3;
+        padding: 10px;
+    }
+}
+
+.pastafrola--img {
+    @extend .donas--img;
+    background-image: url(../img/Productos/pastafrola.jpg);
+}
+
+span.pastafrola--span {
+    @extend .donas--span;
+}
+
+// FIN PASTAFROLA
+
+// PIZZA
+
+section article.pizza {
+    @extend .donas;
+    grid-column: 4/5;
+    grid-row: 2/3;
+
+
+    p.pizza--parraf {
+        color: $black-color;
+        font-size: 13px;
+        grid-row: 2/3;
+        padding: 10px;
+    }
+}
+
+.pizza--img {
+    @extend .donas--img;
+    background-image: url(../img/Productos/pizza.jpg);
+}
+
+span.pizza--span {
+    @extend .donas--span;
+}
+
+// FIN PIZZA
+
+// MEDIALUNA
+
+section article.medialuna {
+    @extend .donas;
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+
+    p.medialuna--parraf {
+        color: $black-color;
+        font-size: 13px;
+        grid-row: 2/3;
+        padding: 10px;
+    }
+}
+
+.medialuna--img {
+    @extend .donas--img;
+    background-image: url(../img/Productos/media-luna.jpg);
+}
+
+span.medialuna--span {
+    @extend .donas--span;
+}
+
+// FIN MEDIALUNA
+
+// TARTA
+
+section article.tarta {
+    @extend .donas;
+    grid-column: 3/4;
+    grid-row: 3/4;
+
+
+    p.tarta--parraf {
+        color: $black-color;
+        font-size: 13px;
+        grid-row: 2/3;
+        padding: 10px;
+    }
+}
+
+.tarta--img {
+    @extend .donas--img;
+    background-image: url(../img/Productos/tarta.jpg);
+}
+
+span.tarta--span {
+    @extend .donas--span;
+}
+
+// FIN TARTA
+
+// TACOS
+
+section article.tacos {
+    @extend .donas;
+    grid-column: 4/5;
+    grid-row: 3/4;
+
+
+    p.tacos--parraf {
+        color: $black-color;
+        font-size: 13px;
+        grid-row: 2/3;
+        padding: 10px;
+    }
+}
+
+.tacos--img {
+    @extend .donas--img;
+    background-image: url(../img/Productos/tacos.jpg);
+}
+
+span.tacos--span {
+    @extend .donas--span;
+}
+
+// FIN TACOS
+
+/* MISIÓN Y VISIÓN */
+
+
+.myv-div {
+    width: 95%;
+    background-color: $color-principal;
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 0 0 20px 20px gray;
+    padding: 0;
+
+    i {
+        font-size: 35px;
+        color: $grey-col;
+        margin: 35px 0;
+    }
+
+    h3 {
+        font-weight: bold;
+        color: $grey-col;
+        margin: 25px 0;
+    }
+
+    p {
+        margin: auto;
+        width: 90%;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+
+/* FIN MISIÓN Y VISIÓN */
+
+/* COMIENZO FORMULARIO */
+
+.container-form {
+    background-color: #fea1006c;
+    margin: auto;
+    width: 100%;
+    margin-top: 200px;
+    display: grid;
+}
+
+#formulario {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 50px;
+    align-items: center;
+}
+
+h1.msj {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: $sombra-texto;
+}
+
+input {
+    @include parametros(80%, 2em);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    opacity: 60%;
+    background-color: #dadada;
+    box-shadow: $sombra-caja;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+textarea {
+    @include parametros(80%, 200px);
+    resize: none;
+    border-radius: 10px;
+    background-color: #dadada;
+    border: solid 1.5px;
+    box-shadow: $sombra-caja;
+    opacity: 60%;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+input.boton {
+    @include parametros(80%, 40px);
+    opacity: 90%;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: $sombra-texto;
+}
+
+.map {
+    margin-top: 25px;
+    margin-right: 55px;
+    padding-top: 50px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+
+.info-contacto {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-size: 25px;
+    text-shadow: $sombra-texto;
+
+    ul li {
+        list-style: none;
+        margin: 0px;
+        color: #fff;
+        padding: 5px;
+    }
+}
+
+
+/* FIN FORMULARIO */
+
+
+div.flecha {
+    padding: 7px;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin: auto;
+}
+
+section a img#flecha {
+    height: 200px;
+}
+
+
+
+/* FIN CUERPO DE LA PÁGINA */

@@ -1,0 +1,80 @@
+$color-principal: #fe9f00;
+
+/* COMIENZA MENU DE NAVEGACION */
+
+.navbar {
+    background-color: $color-principal;
+}
+
+/* COMIENZO LOGO */
+
+#navbar-brand {
+    font-size: 80px;
+    color: #fff;
+    padding: 0;
+    margin-left: 50px;
+    font-family: "ossem-rust";
+}
+
+/* FIN LOGO */
+
+nav {
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        background-color: $color-principal;
+        
+        li#li {
+            margin-right: 30px;
+            border-radius: 10px;
+            font-size: 16px;
+            
+            
+            a{
+                transition: all 0.5s;
+                border-radius: 10px;
+                font-weight: bold;
+                
+            }
+        }
+    }
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #818181 !important;
+    transform: scale(1.05);
+}
+
+/* COMIENZO SUBMENÚ DENTRO DEL BOTÓN "Productos" */
+
+
+.submenu {
+    position: absolute;
+    z-index: 1000;
+    background-color: #fea100ce;
+    border-radius: 10px;
+    padding: 0;
+    display: none;
+
+    li{
+        margin: 0;
+        padding: 0;
+        display: block;
+
+        a.submenu1{
+        padding: 19px;
+        margin: 0;
+        }
+    }
+}
+
+.menuPrincipal li:hover .submenu {
+    display: block;
+}
+
+
+/* FIN SUBMENÚ DENTRO DEL BOTÓN "Productos" */
+/* FIN MENÚ DE NAVEGACION */

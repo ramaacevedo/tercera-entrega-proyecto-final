@@ -1,0 +1,45 @@
+$color-principal: #fe9f00;
+
+/* COMIENZO FOOTER */
+
+footer {
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30px 250px auto 300px 30px;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: $color-principal;
+    height: 120px;
+    margin: 0;
+
+    p{
+        color: #000000;
+        margin: auto 0;
+        padding: 0;
+        font-weight: bold;
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+}
+
+.instagram-img {
+    height: 40px;
+    float: right;
+}
+
+#a-img {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: auto 0;
+}
+
+
+h5 {
+    font-size: 16px;
+    grid-column: 4/6;
+    grid-row: 3/4;
+    text-align: center;
+    margin: auto;
+}
+
+/* FIN FOOTER */
